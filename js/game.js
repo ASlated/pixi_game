@@ -13,13 +13,6 @@ class Game extends Application {
     this.player.x = 0;
     this.player.y = 0;
     this.stage.addChild(this.player);
-    this.timer = 0;
-    this.ticker.add(this.update);
-  }
-
-  update(){
-    this.timer++;
-    console.log(this.timer);
   }
 
 }
