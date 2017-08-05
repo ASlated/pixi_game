@@ -1,0 +1,10 @@
+.canvas_wrapper {
+  width: 512px;
+  height: 480px;
+  border: 1px solid black;
+  background-color: gray;
+  padding: 5px;
+}
+#canvas {
+  /*float: left;*/
+}

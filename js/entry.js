@@ -1,3 +1,4 @@
 import Game from './game.js'
 
-new Game();
+var game = new Game();
+game.start();
