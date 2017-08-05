@@ -19,8 +19,8 @@ class Game extends Application {
 
   update() {
     // this.player.texture = this.player.frames[Math.ceil(Math.random() * this.player.frames.length - 1)];
-    this.player.x += 1;
-    // this.player.animations.play('walk');
+    // this.player.x += 1;
+    this.player.animations.play('walk');
   }
 
 }

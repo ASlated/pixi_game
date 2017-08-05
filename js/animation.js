@@ -1,6 +1,7 @@
 class Animation {
-  constructor(frames) {
+  constructor(frames, delay) {
     this.frames = frames;
+    this.delay = delay;
     this.active = 0;
     this.next_frame = this.next_frame.bind(this);
   }
@@ -11,6 +12,7 @@ class Animation {
     } else {
       this.active++;
     }
+    this.current_frame = this.frames[this.active]
   }
 }
 
