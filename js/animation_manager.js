@@ -12,13 +12,14 @@ class AnimationManager {
       let frame = new Texture(image, rect);
       this.frames.push(frame);
     }
+    this.counter = 0;
+    // this.sprite.texture = this.frames[0]
     this.add = this.add.bind(this);
     this.play = this.play.bind(this);
-    this.counter = 0;
   }
 
-  add(name, frames) {
-    this[name] = new Animation(frames);
+  add(name, frames, delay) {
+    this[name] = new Animation(frames, delay);
   }
 
   play(animation) {

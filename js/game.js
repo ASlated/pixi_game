@@ -7,7 +7,7 @@ SCALE_MODES.DEFAULT = SCALE_MODES.NEAREST;
 class Game extends Application {
 
   constructor(){
-    super(256, 240, {view: document.getElementById('canvas'), backgroundColor: 0x1099bb, resolution: 2, roundPixels: false, antialias: false});
+    super(256, 240, {view: document.getElementById('canvas'), backgroundColor: 0x1099bb, resolution: 4, roundPixels: false, antialias: false});
     document.body.appendChild(this.view)
     this.player = new Player();
     this.player.x = 0;
@@ -18,8 +18,6 @@ class Game extends Application {
   }
 
   update() {
-    // this.player.texture = this.player.frames[Math.ceil(Math.random() * this.player.frames.length - 1)];
-    // this.player.x += 1;
     this.player.animations.play('walk');
   }
 
